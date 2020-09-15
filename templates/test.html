@@ -1,0 +1,68 @@
+{% extends "test_layout.html"  %}
+
+{% block content %}
+
+<div class="testType" id="testType">
+        <div class="container mt-3">
+              <div class="row m-1" style="width:80%; background-color:#E5E7E9">
+                    <div class="col-md">
+                        <a href="#">Aptitude</a>
+                    </div>
+                    <div class="col-md">
+                        <a href="#">Reasoning</a>
+                    </div>
+                    <div class="col-md">
+                        <a href="#">English</a>
+                    </div>
+              </div>
+        </div>
+</div>
+<div style="width: 100%; display: inline-flex; margin-top:2%">
+    <div  id="questionsContainer" class="questionsContainer" style="width: 85%; margin: 2%;background-color:#E5E7E9;">
+        <div class="my-2">
+            <h5>QuestionAnswer</h5>
+        </div>
+        <hr>
+        <div style="margin:4%">
+            <div class="question_div">1. The "t" in class name makes it apply only to "top" side, there are similar classes for bottom, left, right. The number defines space size.</div>
+            <div class="choice_div">
+                <form>
+                    <label class="radio-inline m-3">
+                      <input type="radio" name="optradio">Option 1
+                    </label>
+                    <label class="radio-inline m-3">
+                      <input type="radio" name="optradio">Option 2
+                    </label>
+                    <label class="radio-inline m-3">
+                      <input type="radio" name="optradio">Option 3
+                    </label>
+                </form>
+            </div>
+            <div class="btn_div mt-4">
+                <a href="#" class="previous">&laquo; Previous</a>
+                <button class="btn btn-sm btn-dark" style=" margin-left: 20%;">Later</button>
+                <button class="btn btn-sm btn-dark mx-5" >Submit</button>
+                <a href="#" class="next">Next &raquo;</a>
+            </div>
+        </div>
+    </div>
+        <div id="questionNumber" class="questionNumber border-dark my-3 " style="width:18%; border: 2px solid; background-color:#D6DBDF;">
+            <div style="margin:8%">
+                <h5>Skip to Question</h5>
+                <button id="Q1" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>1</b></button>
+                <button id="Q2" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>2</b></button>
+                <button id="Q3" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>3</b></button>
+                <button id="Q4" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>4</b></button>
+                <button id="Q5" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>5</b></button>
+                <button id="Q6" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>6</b></button>
+                <button id="Q7" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>7</b></button>
+                <button id="Q8" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>8</b></button>
+                <button id="Q9" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>9</b></button>
+                <button id="Q10" type="button" class="btn btn-info btn-md" style="border-radius:50%; margin:10px"><b>10</b></button>
+            </div>
+            <div>
+                <button class="btn btn-dark mb-2" style="margin-left:20%; color:white">Preview</button>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
